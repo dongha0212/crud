@@ -4,7 +4,7 @@ import React from 'react'
 const getTopicById = async (id) => {
   const apiUrl = process.env.API_URL
   try {
-    const res = await fetch(`${apiUrl}http://localhost:3000/api/topics/${id}`, {
+    const res = await fetch(`${apiUrl}/api/topics/${id}`, {
       method: 'GET',
       cache: 'no-store',
     })
